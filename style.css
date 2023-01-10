@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+background-color: rgb(207, 225, 240);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+}
+
+.content {
+display: grid;
+width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding: 0;
+grid-template-columns: 420px 420px 340px;
+gap: 10px;
+grid-template-areas: "head head head"
+                     "main main sidebar"
+                     "main main sidebar"
+                     "main main sidebar"
+                     "video video sidebar"
+                     "footer footer footer";
+}
+
+/* на все изображения ЧБ */
+img:hover {
+    filter: grayscale(70%);
+    }
+/* на все изображения ЧБ */
+
+.header {
+margin-left: 0px;
+    display: flex;
+    grid-area: head;
+    flex-direction: row;
+    background-color: #242582;
+    border-radius: 0 0 25px 25px;
+    border: 2px solid white;
+    color: rgb(30, 243, 14);
+    font-family: 'Press Start 2P', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.logo {
+    width: 50px;
+    margin-left: 80px;
+    margin-top: 17px;
+}
+
+h1 {
+    font-size: 60px;
+    width: 900px;
+    text-align: end;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-shadow: 2px 0 rgb(197, 26, 200), 0 1px rgb(197, 34, 172), 1px 0 rgb(147, 22, 132), 0 -1px rgb(171, 15, 169);
+}
+
+.menu {
+    width: 450px;   
+    margin-left: 50px;
+    padding-top: 53px; 
+    font-size: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(217, 231, 244);
+    text-shadow: 1px 0 rgb(197, 26, 200), 0 1px rgb(197, 34, 172), 1px 0 rgb(147, 22, 132), 0 -1px rgb(171, 15, 169);
+    margin: 5px;
+}
+
+/* Главгая карточка */
+.main {
+    padding: 0;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 600px;
+    margin-right: 20px;
+}
+
+.first-content {
+    text-align: center;  
+    background-color: rgba(255, 255, 255, 0.871);
+    width: 100%;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.main-pic {
+    width: 823px;
+    border-radius: 4px;
+    padding-top: 2px;
+}
+
+.figcapture:hover {
+    border-left: 4px solid #242582;
+}
+
+.main h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+}
+
+.main a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Конец Главной карточки */
+
+/* Карточки средние */
+.medium-card {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.871);
+    width: 405px;
+    height: 300px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card-pic {
+    width: 405px;
+    height: 225px;
+    border-radius: 4px 4px 0 0;
+}
+
+.second-content {
+    margin-right: 15px;
+}
+/* Конец средних карточек */
+
+/* Мини-карточки */
+.mini {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.mini-card {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.871);
+    width: 203px;
+    height: 160px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+}
+
+.mini-card-pic {
+    width: 100%;
+    height: 115px;
+    border-radius: 4px 4px 0 0;
+}
+
+
+.mini-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.mini-card .figcapture p {
+font-size: 10px;
+font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+ grid-area: sidebar;
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ margin: 0;
+ margin-top: 10px;
+ padding: 0;
+}
+
+.card-sidebar {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.871);
+    border-radius: 4px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', sans-serif;
+
+}
+
+.card-sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.side-pic {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+/* .side-pic:hover {
+filter: grayscale(100%);
+} */
+
+.side-figcapture {
+    padding: 0 5px 5px 5px;
+
+}
+
+.side-figcapture:hover:hover {
+    border-left: 4px solid #242582;
+}
+
+.sidebar-1 {
+    grid-area: sidebar-1;
+    margin: 0;
+   }
+
+.video {
+    grid-area: video;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 560px;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #242582;
+    height: 30px;
+    border-radius: 25px 25px 0 0;
+    border: 2px solid white;
+}
+
+.foot {
+    display: flex;
+    margin-top: 5px;
+}
+
+.foot p {
+    width: 770px;
+    text-align: end;
+    color: white;
+}
+
+.link {
+    width: 400px;
+    text-align: end;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
